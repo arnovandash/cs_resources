@@ -135,8 +135,6 @@ print('Head:', my_linked_list.head.value)
 print('Tail:', my_linked_list.tail.value)
 print('Length:', my_linked_list.length)
 
-
-
 """
     EXPECTED OUTPUT:
     ----------------
@@ -147,14 +145,13 @@ print('Length:', my_linked_list.length)
 """
 
 
-# Test Print List Method
+# Test print_list Method
 
 my_linked_list = LinkedList(1)
 my_linked_list.append(2)
 my_linked_list.append(3)
 
 my_linked_list.print_list()
-
 
 """
     EXPECTED OUTPUT:
@@ -166,7 +163,7 @@ my_linked_list.print_list()
 """
 
 
-# Test Append Method
+# Test append Method
 
 my_linked_list = LinkedList(1)
 my_linked_list.make_empty()
@@ -180,8 +177,6 @@ print('Length:', my_linked_list.length, '\n')
 
 print('Linked List:')
 my_linked_list.print_list()
-
-
 
 """
     EXPECTED OUTPUT:
@@ -197,7 +192,7 @@ my_linked_list.print_list()
 """
 
 
-# Test Pop method
+# Test pop method
 
 def check(expect, actual, message):
     print(message)
@@ -257,7 +252,7 @@ check(None, linked_list.tail, "Tail of linked list (after third pop):")
 check(0, linked_list.length, "Length of linked list (after third pop):")
 
 
-# Test Prepend Method
+# Test prepend Method
 
 my_linked_list = LinkedList(2)
 my_linked_list.append(3)
@@ -270,9 +265,7 @@ print('Length:', my_linked_list.length, '\n')
 print('Linked List:')
 my_linked_list.print_list()
 
-
 my_linked_list.prepend(1)
-
 
 print('\n\nAfter prepend():')
 print('---------------')
@@ -281,8 +274,6 @@ print('Tail:', my_linked_list.tail.value)
 print('Length:', my_linked_list.length, '\n')
 print('Linked List:')
 my_linked_list.print_list()
-
-
 
 """
     EXPECTED OUTPUT:
@@ -312,11 +303,10 @@ my_linked_list.print_list()
 """
 
 
-# Test Pop First Method
+# Test pop_first Method
 
 my_linked_list = LinkedList(2)
 my_linked_list.append(1)
-
 
 # (2) Items - Returns 2 Node
 print(my_linked_list.pop_first().value)
@@ -324,8 +314,6 @@ print(my_linked_list.pop_first().value)
 print(my_linked_list.pop_first().value)
 # (0) Items - Returns None
 print(my_linked_list.pop_first())
-
-
 
 """
     EXPECTED OUTPUT:
@@ -337,7 +325,7 @@ print(my_linked_list.pop_first())
 """
 
 
-# Test Get Method
+# Test get Method
 
 my_linked_list = LinkedList(0)
 my_linked_list.append(1)
@@ -345,8 +333,6 @@ my_linked_list.append(2)
 my_linked_list.append(3)
 
 print(my_linked_list.get(3).value)
-
-
 
 """
     EXPECTED OUTPUT:
@@ -356,7 +342,7 @@ print(my_linked_list.get(3).value)
 """
 
 
-# Test Set Method
+# Test set Method
 
 my_linked_list = LinkedList(11)
 my_linked_list.append(3)
@@ -370,8 +356,6 @@ my_linked_list.set_value(1,4)
 
 print('\nLL after set_value():')
 my_linked_list.print_list()
-
-
 
 """
     EXPECTED OUTPUT:
@@ -390,34 +374,28 @@ my_linked_list.print_list()
 """
 
 
-# Test Insert Method
+# Test insert Method
 
 my_linked_list = LinkedList(1)
 my_linked_list.append(3)
 
-
 print('LL before insert():')
 my_linked_list.print_list()
-
 
 my_linked_list.insert(1,2)
 
 print('\nLL after insert(2) in middle:')
 my_linked_list.print_list()
 
-
 my_linked_list.insert(0,0)
 
 print('\nLL after insert(0) at beginning:')
 my_linked_list.print_list()
 
-
 my_linked_list.insert(4,4)
 
 print('\nLL after insert(4) at end:')
 my_linked_list.print_list()
-
-
 
 """
     EXPECTED OUTPUT:
@@ -447,7 +425,7 @@ my_linked_list.print_list()
 """
 
 
-# Test Remove Method
+# Test remove Method
 
 my_linked_list = LinkedList(1)
 my_linked_list.append(2)
@@ -472,8 +450,6 @@ print('\nRemoved node:')
 print(my_linked_list.remove(2).value)
 print('LL after remove() of last node:')
 my_linked_list.print_list()
-
-
 
 """
     EXPECTED OUTPUT:
@@ -509,7 +485,7 @@ my_linked_list.print_list()
 """
 
 
-# Test Reverse Method 
+# Test reverse Method
 
 my_linked_list = LinkedList(1)
 my_linked_list.append(2)
@@ -523,8 +499,6 @@ my_linked_list.reverse()
 
 print('\nLL after reverse():')
 my_linked_list.print_list()
-
-
 
 """
     EXPECTED OUTPUT:
